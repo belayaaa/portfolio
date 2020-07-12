@@ -1,0 +1,18 @@
+ /* Intro */
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro__title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  @media (max-width: 720px) {
+    font-size: 75px;
+  }
+}
+

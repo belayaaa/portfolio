@@ -1,0 +1,33 @@
+ /* Social */
+ 
+.social {
+	display: flex;
+	justify-content: space-around;
+    width: 300px;
+	margin-top: 45px;
+    margin-bottom: 50px;
+}
+.social__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.social__icon {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    padding-top: 9px;
+	
+    background-color: rgba(255, 255, 255, .3) ;
+    border-radius: 50%;
+
+    transition: background .2s linear;
+    &:hover {
+    	background-color: $primary;
+    	box-shadow: 0 0 15px $primary;
+    	fill: $white;
+    }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова через запятую">
+
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/css/venobox.min.css"> -->
+
+	<!-- Main CSS File -->
+    <link rel="stylesheet" href="build/css/style.min.css">
+
+	<title>Portfolio</title>
+</head>
+<body>
+
+<!-- =======  Sprite ======= -->
+<svg style="display: none;">
+	<symbol id="search" viewBox="-1 0 136 136.219" height="20">
+        <g>
+            <path d="M93.148 80.832c16.352-23.09 10.883-55.062-12.207-71.41S25.88-1.461 9.531 21.632C-6.816 44.723-1.352 76.693 21.742 93.04a51.226 51.226 0 0055.653 2.3l37.77 37.544c4.077 4.293 10.862 4.465 15.155.387 4.293-4.075 4.465-10.86.39-15.153a9.21 9.21 0 00-.39-.39zm-41.84 3.5c-18.245.004-33.038-14.777-33.05-33.023-.004-18.246 14.777-33.04 33.027-33.047 18.223-.008 33.008 14.75 33.043 32.972.031 18.25-14.742 33.067-32.996 33.098h-.023zm0 0"/>
+        </g>
+    </symbol>
+</svg>	
+
+<div class="absolute ">
+    <div class="container">
+        <!-- =======  Header ======= -->
+        <header class="header" id="header">
+			<div class="header__inner row justify-content-md-center">
+				<nav class="nav" id="nav">
+					<a class="nav__link active" href="index.html">Home</a>
+					<a class="nav__link" href="about.html">About</a>
+                    <a class="nav__link" href="resume.html">Resume</a>
+					<a class="nav__link" href="portfolio.html">Portfolio</a>
+					<a class="nav__link" href="contact.html">Contact</a>
+				</nav>
+
+				<button class="nav-toggle" id="nav_toggle" type="button">
+	                <span class="nav-toggle__item">Menu</span>
+	            </button>
+			</div>
+	   </header>	
+    </div> <!-- /.container -->
+</div><!--  /.absolute -->
+
+<div class="relative">
+    <!-- Slider -->
+    <div class="justify-content-center">
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-fixed">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="7000">
+                           <img src="build/images/01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="7000">
+                        <img src="build/images/02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-interval="7000">
+                        <img src="build/images/03.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> <!-- /.relative -->
+
+<!-- ======= Portfolio Section ======= -->
+<div class="portfolio-absolute">
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>My Works</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-camera">Camera</li>
+              <li data-filter=".filter-watch">Watch</li>
+              <li data-filter=".filter-laptop">Laptop</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-camera">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Camera 1</h4>
+                <p>Camera</p>
+                <div class="portfolio-links">
+                  <a href="build/images/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="Camera 1">
+                    <svg class="portfolio__icon">
+                            <use xlink:href="#search"></use>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-camera">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Camera 2</h4>
+                <p>Camera</p>
+                <div class="portfolio-links">
+                  <a href="build/images/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Camera 2">
+                      <svg class="portfolio__icon">
+                            <use xlink:href="#search"></use>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-camera">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Camera 3</h4>
+                <p>Camera</p>
+                <div class="portfolio-links">
+                  <a href="build/images/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="Camera 3">
+                    <svg class="portfolio__icon">
+                         <use xlink:href="#search"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-watch">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Watch 1</h4>
+                <p>Watch</p>
+                <div class="portfolio-links">
+                    <a href="build/images/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Watch 1">
+                      <svg class="portfolio__icon">
+                            <use xlink:href="#search"></use>
+                      </svg>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-watch">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Watch 2</h4>
+                <p>Watch</p>
+                <div class="portfolio-links">
+                  <a href="build/images/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Watch 2">
+                      <svg class="portfolio__icon">
+                            <use xlink:href="#search"></use>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-watch">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Watch 3</h4>
+                <p>Watch</p>
+                <div class="portfolio-links">
+                  <a href="build/images/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="Watch 3">
+                      <svg class="portfolio__icon">
+                            <use xlink:href="#search"></use>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-laptop">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Laptop 1</h4>
+                <p>Laptop</p>
+                <div class="portfolio-links">
+                  <a href="build/images/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Laptop 1">
+                      <svg class="portfolio__icon">
+                            <use xlink:href="#search"></use>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-laptop">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Laptop 2</h4>
+                <p>Laptop</p>
+                <div class="portfolio-links">
+                  <a href="build/images/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Laptop 2">
+                      <svg class="portfolio__icon">
+                            <use xlink:href="#search"></use>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-laptop">
+            <div class="portfolio-wrap">
+              <img src="build/images/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Laptop 3</h4>
+                <p>Laptop</p>
+                <div class="portfolio-links">
+                  <a href="build/images/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Laptop 3">
+                      <svg class="portfolio__icon">
+                            <use xlink:href="#search"></use>
+                      </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+</div> <!-- /.absolute -->
+
+
+
+
+
+
+
+
+
+<!-- Vendor JS Files -->
+
+<!-- Подключаем jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- Подключаем bootsrap -->
+<!-- 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<!-- Подключаем VenoBox -->
+<!--     <script src="vendor/js/venobox.min.js"></script> -->
+<!-- Подключаем waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<!-- Подключаем counterUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<!-- Подключаем owlCarousel -->
+<!--     <script src="vendor/js/owl.carousel.min.js"></script> -->
+<!-- Подключаем фильтр Isotope -->
+<!--     <script src="vendor/js/isotope.pkgd.min.js"></script> -->
+
+
+
+
+
+<!-- Main JS File -->
+
+<!-- Подключаем файл скриптов -->
+	<script src="build/js/main.min.js"></script>
+    
+</body>
+</html>

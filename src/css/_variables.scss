@@ -1,0 +1,66 @@
+$bgColor: #74529C;
+$color: #E3E3E3;
+$blue-dark: #0272eb;
+$black: #000000;
+$white: #ffffff;
+$primary: #007bff;
+$primary-light: #218cff;
+$dark: #343a40;
+
+$mobile-sm: "max-width: 565px";
+$mobile: "max-width: 767px";
+$tablet: "max-width: 991px";
+$notebook: "max-width: 1199px";
+
+
+.text-shadow {
+  text-shadow: 0 0 10px $blue-dark;
+}
+
+.m-6 {
+  margin: 4rem !important;
+}
+
+.mt-6,
+.my-6 {
+  margin-top: 4rem !important;
+}
+
+.mr-6,
+.mx-6 {
+  margin-right: 4rem !important;
+}
+
+.mb-6,
+.my-6 {
+  margin-bottom: 4rem !important;
+}
+
+.ml-6,
+.mx-6 {
+  margin-left: 4rem !important;
+}
+
+.m-8 {
+  margin: 8rem !important;
+}
+
+.mt-8,
+.my-8 {
+  margin-top: 8rem !important;
+}
+
+.mr-8,
+.mx-8 {
+  margin-right: 8rem !important;
+}
+
+.mb-8,
+.my-8 {
+  margin-bottom: 8rem !important;
+}
+
+.ml-8,
+.mx-8 {
+  margin-left: 8rem !important;
+}

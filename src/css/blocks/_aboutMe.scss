@@ -1,0 +1,48 @@
+ /* AboutMe */
+
+.content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: $primary;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+.about {
+  padding-top: 100px;
+}
+
+.about__img {
+	width: 100%;
+}
+
+.about__point {
+    display: flex;
+    padding-bottom: 10px;
+    &:before {
+    content: "";
+        display: inline-flex;
+        margin-right: 10px;
+        margin-top: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        transition: background .2s linear;
+        background-color: $primary;
+        box-shadow: 0 0 8px $primary;}
+}
+
+.about__li {
+    margin-right: 10px;
+}

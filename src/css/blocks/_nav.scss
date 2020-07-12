@@ -1,0 +1,78 @@
+/* Desktop Navigation */
+
+.nav {
+    margin-top: 35px;
+    display: flex;
+    padding: 0;
+}
+
+.nav__link {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.nav__link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: $primary;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav__link:hover:before,.nav__link.active >:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.nav__link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media ($tablet) {
+
+ // Nav 
+  .nav {
+    display: none;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #000;
+    }
+
+  .nav.active {
+      display: block;
+    }
+    
+  .nav__link {
+        display: block;
+        margin: 0;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+
+  .nav__link:before {
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+  .nav__link:hover:before,.nav__link .active:before {
+    visibility: visible;
+    width: 100px;
+  }
+}
+
